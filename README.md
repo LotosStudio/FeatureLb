@@ -16,7 +16,7 @@ AddFeature — registers a new feature
 IsFeatureEnabled — checks whether a feature is enabled for a specific user
 
 ## Use
-"using FeatureLb;
+`using FeatureLb;
 
 Manager manager = new Manager();
 
@@ -31,4 +31,4 @@ manager.AddFeature(newFeature);
 
 UserContext user = new UserContext(15);
 bool isEnabled = manager.IsFeatureEnabled("NewChat", user);
-"
+`
