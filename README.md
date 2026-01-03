@@ -13,6 +13,7 @@ The library implements a Feature Flags (Feature Toggles) mechanism, enabling dyn
 
 ## Main methods:
 AddFeature — registers a new feature
+
 IsFeatureEnabled — checks whether a feature is enabled for a specific user
 
 ## Use
