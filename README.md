@@ -16,19 +16,20 @@ AddFeature — registers a new feature
 IsFeatureEnabled — checks whether a feature is enabled for a specific user
 
 ## Use
-`using FeatureLb;`
+```
+using FeatureLb;
 
-`Manager manager = new Manager();`
+Manager manager = new Manager();
 
-`Flag newFeature = new Flag("NewChat")`
-`{`
-    `IsEnabled = true,`
-    `EnabledPercent = 10,`
-    `EnableAfterDate = new DateTime(2024, 1, 1)`
-`};`
+Flag newFeature = new Flag("NewChat")
+{
+    IsEnabled = true,
+    EnabledPercent = 10,
+    EnableAfterDate = new DateTime(2024, 1, 1)
+};
 
-`manager.AddFeature(newFeature);`
+manager.AddFeature(newFeature);
 
-`UserContext user = new UserContext(15);
+UserContext user = new UserContext(15);
 bool isEnabled = manager.IsFeatureEnabled("NewChat", user);
-`
+```
